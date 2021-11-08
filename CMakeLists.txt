@@ -1,0 +1,32 @@
+cmake_minimum_required(VERSION 3.12)
+project(ekf)
+set(CMAKE_CXX_STANDARD 17)
+
+find_program(CCACHE_PROGRAM ccache)
+if (CCACHE_PROGRAM)
+    set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
+endif ()
+
+add_compile_options(-Wall -Werror=return-type -Wno-unused-variable)
+if (CMAKE_BUILD_TYPE STREQUAL Release)
+    add_compile_options(-O3 -flto -march=native)
+elseif (CMAKE_BUILD_TYPE STREQUAL RelWithDebInfo)
+    add_compile_options(-O3 -flto -march=native -g)
+elseif (CMAKE_BUILD_TYPE STREQUAL MinSizeRel)
+    add_compile_options(-Os -flto -march=native)
+else ()
+    add_compile_options(-O0 -g)
+endif ()
+
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
+find_package(Ceres 2 REQUIRED)
+include_directories(${CERES_INCLUDE_DIRS})
+
+include_directories(${ekf_INCLUDE_DIR})
+# include_directories(include)
+
+option(WITH_EXAMPLE OFF)
+if(WITH_EXAMPLE)
+    add_subdirectory(example)
+endif()

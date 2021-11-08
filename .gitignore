@@ -1,0 +1,9 @@
+build/
+
+.vscode
+
+.idea
+cmake-build-*
+
+__MAC_OSX__
+.DS_Store
