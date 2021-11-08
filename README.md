@@ -70,19 +70,22 @@ At the same time, we also draw and compare the output results of the Kalman filt
 - [ ] ukf implementation
 
 
-
-**_If you think this project is helpful to you, please give me a thumbs up, it is very useful to me._**
-**_如果你觉得这个项目对你有所帮助，请给我一个点赞，这对我很有用。_**
-
 ## Acknowledgement
 
-JiaoLong: https://github.com/SJTU-RoboMaster-Team for Learning platform
-txy: https://github.com/xinyang-go for Code implementation and Guidance
-flx: https://github.com/E-T-E-R-N-A-L-B-L-U-E for Example
+- JiaoLong: https://github.com/SJTU-RoboMaster-Team for Learning platform
+- txy: https://github.com/xinyang-go for Code implementation and Guidance
+- flx: https://github.com/E-T-E-R-N-A-L-B-L-U-E for Example
 
 
 
 ---
 Author: [Harry-hhj](https://github.com/Harry-hhj?tab=repositories)
+
 Code Implementation: [xinyang-go](https://github.com/xinyang-go)
+
 Colaborator: [E-T-E-R-N-A-L-B-L-U-E](https://github.com/E-T-E-R-N-A-L-B-L-U-E)
+
+
+
+**_If you think this project is helpful to you, please give me a thumbs up, it is very useful to me._**
+**_如果你觉得这个项目对你有所帮助，请给我一个点赞，这对我很有用。_**
